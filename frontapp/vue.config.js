@@ -7,11 +7,12 @@ const server = "http://localhost:3000";
 
 module.exports = defineConfig({
   transpileDependencies: true,
-  outputDir: path.resolve("../backend/public"), 
+  //outputDir: path.resolve("../backend/public"), 
   // 개발용 임시 서버
   devServer: {
     // Vue.js 실행 시 적용 PORT 변경
     port: 8082,
+    
     // CORS(Cross Origin Resource Sharing) => proxy setting
     proxy: {
       // 해당 문자열로 시작하는 통신에 적용하는 설정
